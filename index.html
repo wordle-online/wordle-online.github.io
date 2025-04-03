@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Unlimited - Free Online Word Guessing Game | Play Unlimited Word Puzzles</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Play Wordle Unlimited for free! Challenge yourself with infinite 5-letter word puzzles. Perfect for word lovers, featuring detailed tutorials, strategy guides, and daily challenges. No registration required.">
+    <meta name="keywords" content="wordle, wordle unlimited, word game, puzzle game, brain game, free online game, word puzzle, daily wordle, vocabulary game, educational game">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/igames/wordle">
+    <meta property="og:title" content="Wordle Unlimited - Free Online Word Guessing Game">
+    <meta property="og:description" content="Challenge yourself with unlimited Wordle puzzles! Guess 5-letter words, get color-coded feedback, and improve your vocabulary with our free online word game.">
+    <meta property="og:image" content="https://yourdomain.com/images/wordle-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/igames/wordle">
+    <meta property="twitter:title" content="Wordle Unlimited - Free Online Word Guessing Game">
+    <meta property="twitter:description" content="Challenge yourself with unlimited Wordle puzzles! Perfect for word game enthusiasts of all skill levels.">
+    <meta property="twitter:image" content="https://yourdomain.com/images/wordle-preview.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/igames/wordle" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 640px) {
+            .game-container {
+                height: calc(100vh - 4rem);
+            }
+            .letter-tile {
+                font-size: 1.25rem;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Smooth Transitions */
+        .letter-tile {
+            transition: all 0.3s ease;
+        }
+
+        /* Accessibility Improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:z-50">
+        Skip to main content
+    </a>
+
+    <header class="bg-white shadow-sm py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900">Wordle Unlimited</h1>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-1 bg-gray-50 py-4 sm:py-6">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <!-- Game Container -->
+            <div class="w-full flex flex-col items-center mb-8">
+                <div class="w-full h-[calc(100vh-4rem)] md:h-auto md:max-w-3xl md:aspect-[4/3] relative rounded-lg overflow-hidden shadow-lg">
+                    <iframe
+                        title="Wordle Unlimited Game"
+                        src="https://play-wordle-unlimited.pages.dev/"
+                        class="absolute top-0 left-0 w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+
+            <!-- Enhanced Introduction Section -->
+            <div class="mt-8 sm:mt-12 flex flex-col items-center px-3 sm:px-6 lg:px-8">
+                <div class="w-full max-w-4xl text-center space-y-4 sm:space-y-8 mb-8 sm:mb-12">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">
+                        Welcome to Wordle Unlimited
+                    </h2>
+                    <p class="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                        Dive into the world's most addictive word puzzle game! Challenge yourself with unlimited 5-letter word puzzles, perfect your strategy, and expand your vocabulary. Whether you're a casual player or a word wizard, there's always a new challenge waiting for you.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-6">
+                        <div class="bg-green-50 p-4 rounded-lg flex items-center gap-2">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-green-800">Unlimited Puzzles</span>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg flex items-center gap-2">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            <span class="text-blue-800">No Registration</span>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg flex items-center gap-2">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <span class="text-purple-800">Daily Challenges</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Tutorial Section -->
+            <div class="max-w-6xl w-full space-y-8 sm:space-y-10">
+                <div class="bg-white p-6 sm:p-8 lg:p-12 rounded-xl shadow-md border border-gray-100">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">
+                        Master Wordle: Complete Guide
+                    </h2>
+
+                    <!-- Step 1: Enhanced First Guess Section -->
+                    <div class="mb-12 sm:mb-16">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-50 rounded-full px-6 py-2 mb-4">
+                                <span class="text-blue-800 font-semibold">Step 1</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 text-center">
+                                Making Your First Guess
+                            </h3>
+                            <p class="text-lg text-gray-600 mb-8 text-center max-w-3xl">
+                                Start your Wordle journey with a strategic first word. Choose a word containing common letters and multiple vowels to maximize your information gathering.
+                            </p>
+                            
+                            <!-- Example Word Display -->
+                            <div class="flex flex-col items-center gap-6">
+                                <div class="flex gap-2 justify-center">
+                                    <div class="w-14 h-14 flex items-center justify-center rounded-md font-bold text-2xl bg-[#787c7e] text-white">
+                                        S
+                                    </div>
+                                    <div class="w-14 h-14 flex items-center justify-center rounded-md font-bold text-2xl bg-[#787c7e] text-white">
+                                        T
+                                    </div>
+                                    <div class="w-14 h-14 flex items-center justify-center rounded-md font-bold text-2xl bg-[#c9b458] text-white">
+                                        A
+                                    </div>
+                                    <div class="w-14 h-14 flex items-center justify-center rounded-md font-bold text-2xl bg-[#787c7e] text-white">
+                                        R
+                                    </div>
+                                    <div class="w-14 h-14 flex items-center justify-center rounded-md font-bold text-2xl bg-[#787c7e] text-white">
+                                        E
+                                    </div>
+                                </div>
+                                
+                                <!-- Enhanced Color Guide -->
+                                <div class="bg-gray-50 p-6 rounded-lg w-full max-w-2xl">
+                                    <h4 class="text-lg font-semibold mb-4 text-center">Color Guide</h4>
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-6 h-6 rounded bg-[#6aaa64]"></div>
+                                            <span class="text-gray-700">Correct position</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-6 h-6 rounded bg-[#c9b458]"></div>
+                                            <span class="text-gray-700">Wrong position</span>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-6 h-6 rounded bg-[#787c7e]"></div>
+                                            <span class="text-gray-700">Not in word</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Using Feedback -->
+                    <div class="mb-12 sm:mb-16">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-50 rounded-full px-6 py-2 mb-4">
+                                <span class="text-blue-800 font-semibold">Step 2</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 text-center">
+                                Using Color Feedback
+                            </h3>
+                            <p class="text-lg text-gray-600 mb-8 text-center max-w-3xl">
+                                After your first guess, use the color-coded feedback to make strategic choices. Focus on repositioning yellow letters and avoiding gray ones.
+                            </p>
+
+                            <!-- Progressive Guesses Display -->
+                            <div class="space-y-4">
+                                <!-- Previous Guess (Faded) -->
+                                <div class="flex gap-2 justify-center opacity-50">
+                                    <!-- ... [Previous guess tiles] ... -->
+                                </div>
+                                <!-- Current Guess -->
+                                <div class="flex gap-2 justify-center">
+                                    <!-- ... [Current guess tiles] ... -->
+                                </div>
+                            </div>
+
+                            <!-- Strategy Tips Box -->
+                            <div class="bg-gray-50 p-6 rounded-lg mt-8 w-full max-w-2xl">
+                                <h4 class="text-lg font-semibold mb-4">Strategy Tips</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Use yellow letters in new positions</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Avoid gray letters in future guesses</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Consider common letter patterns</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Pattern Recognition -->
+                    <div class="mb-12 sm:mb-16">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-50 rounded-full px-6 py-2 mb-4">
+                                <span class="text-blue-800 font-semibold">Step 3</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 text-center">
+                                Pattern Recognition
+                            </h3>
+                            <p class="text-lg text-gray-600 mb-8 text-center max-w-3xl">
+                                Look for common word patterns and letter combinations. English words often follow predictable structures that can help narrow down your choices.
+                            </p>
+
+                            <!-- Pattern Examples -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800 mb-3">Common Prefixes</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>RE- (REPLY)</li>
+                                        <li>UN- (UNDER)</li>
+                                        <li>IN- (INPUT)</li>
+                                        <li>PRE- (PRESS)</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800 mb-3">Common Suffixes</h4>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li>-ED (SAVED)</li>
+                                        <li>-ING (BRING)</li>
+                                        <li>-ER (WATER)</li>
+                                        <li>-LY (EARLY)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Final Strategies -->
+                    <div class="mb-12 sm:mb-16">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-blue-50 rounded-full px-6 py-2 mb-4">
+                                <span class="text-blue-800 font-semibold">Step 4</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 text-center">
+                                Advanced Techniques
+                            </h3>
+                            <p class="text-lg text-gray-600 mb-8 text-center max-w-3xl">
+                                Master these advanced strategies to improve your Wordle success rate and reduce the number of guesses needed.
+                            </p>
+
+                            <!-- Advanced Strategy Cards -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
+                                <div class="bg-gray-50 p-6 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800 mb-3">Double Letter Strategy</h4>
+                                    <p class="text-gray-600">
+                                        If you suspect double letters (like 'HAPPY'), test the possibility early. About 25% of five-letter words contain double letters.
+                                    </p>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800 mb-3">Consonant Clustering</h4>
+                                    <p class="text-gray-600">
+                                        Look for common consonant pairs like 'TH', 'CH', 'SH', 'ST'. These combinations appear frequently in English words.
+                                    </p>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded-lg">
+                                    <h4 class="font-semibold text-gray-800 mb-3">Vowel Positioning</h4>
+                                    <p class="text-gray-600">
+                                        Most English words follow consonant-vowel patterns. Once you find a vowel, try common patterns like CVC (Consonant-Vowel-Consonant).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Pro Tips Box -->
+                            <div class="mt-8 bg-blue-50 p-6 rounded-lg w-full max-w-2xl">
+                                <h4 class="font-semibold text-blue-800 mb-4">Pro Tips</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Keep track of eliminated letters to narrow down possibilities</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Consider word frequency - common words are more likely answers</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Use your fourth and fifth guesses strategically when multiple possibilities remain</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced FAQ Section -->
+            <div class="mt-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
+                    Frequently Asked Questions
+                </h2>
+                <div class="space-y-6">
+                    <!-- FAQ Items -->
+                    <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                        <h3 class="text-lg font-semibold text-gray-900 p-4 bg-gray-50">
+                            What makes Wordle Unlimited different from regular Wordle?
+                        </h3>
+                        <div class="p-4 text-gray-600">
+                            Unlike the original Wordle that offers one puzzle per day, Wordle Unlimited lets you play as many puzzles as you want, whenever you want. It's perfect for practice and entertainment without waiting for the next day.
+                        </div>
+                    </div>
+
+                    <!-- More FAQ items... -->
+                    <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                        <h3 class="text-lg font-semibold text-gray-900 p-4 bg-gray-50">
+                            How do I play Wordle Unlimited?
+                        </h3>
+                        <div class="p-4 text-gray-600">
+                            The goal is to guess a five-letter word in six attempts or less. After each guess, the letters will be color-coded: green means correct letter in correct position, yellow means correct letter in wrong position, and gray means the letter isn't in the word at all.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                        <h3 class="text-lg font-semibold text-gray-900 p-4 bg-gray-50">
+                            What are the best starting words for Wordle?
+                        </h3>
+                        <div class="p-4 text-gray-600">
+                            Popular starting words include 'STARE', 'ADIEU', and 'CRANE' because they contain common letters and multiple vowels. However, any five-letter word can be a good start - the key is using the feedback to make better subsequent guesses.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                        <h3 class="text-lg font-semibold text-gray-900 p-4 bg-gray-50">
+                            Are there any special features in Wordle Unlimited?
+                        </h3>
+                        <div class="p-4 text-gray-600">
+                            Yes! Unlike the original Wordle, our version includes:
+                            <ul class="list-disc ml-6 mt-2 space-y-2">
+                                <li>Unlimited games per day</li>
+                                <li>Practice mode for beginners</li>
+                                <li>Statistics tracking</li>
+                                <li>Mobile-friendly interface</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                        <h3 class="text-lg font-semibold text-gray-900 p-4 bg-gray-50">
+                            Can I play Wordle Unlimited on mobile devices?
+                        </h3>
+                        <div class="p-4 text-gray-600">
+                            Yes! Our game is fully optimized for mobile devices. You can play on any smartphone or tablet with a web browser. The interface automatically adjusts to your screen size for the best gaming experience.
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                        <h3 class="text-lg font-semibold text-gray-900 p-4 bg-gray-50">
+                            Do I need to create an account to play?
+                        </h3>
+                        <div class="p-4 text-gray-600">
+                            No! Wordle Unlimited is completely free to play and doesn't require any registration. Simply visit the website and start playing immediately. However, your statistics will only be saved locally on your device.
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-500">
+                <p>&copy; 2025 Wordle Unlimited. All rights reserved.</p>
+                <p class="mt-2">Play unlimited word puzzles for free!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional: Analytics Script -->
+    <script>
+        // Add your analytics code here if needed
+    </script>
+</body>
+</html> 
